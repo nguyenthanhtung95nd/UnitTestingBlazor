@@ -1,0 +1,11 @@
+global using Xunit;
+global using BlazorBUnit.Client.Pages;
+global using BlazorBUnit.Client.Services;
+global using Bunit;
+global using Bunit.TestDoubles;
+global using Microsoft.Extensions.DependencyInjection;
+global using RichardSzalay.MockHttp;
+global using System.Net;
+global using System.Text.Json;
+global using BlazorBUnit.Client.Components;
+global using FluentAssertions;

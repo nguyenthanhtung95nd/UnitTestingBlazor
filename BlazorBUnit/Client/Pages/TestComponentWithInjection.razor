@@ -1,0 +1,21 @@
+﻿@using BlazorBUnit.Client.Services
+@inject IMyDataService MyService;
+
+@if (MyData is null)
+{
+	<p>Retrieving data...</p>
+}
+else
+{
+	<p>Data retrieved</p>
+}
+
+@code {
+
+	public List<string> MyData { get; set; }
+
+	protected override void OnInitialized()
+	{
+		MyData = MyService.GetData();
+	}
+}
